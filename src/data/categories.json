@@ -1,0 +1,19 @@
+{
+  "data" : [
+    {
+      "id": 1,
+      "title": "LEGO City",
+      "tag": "lego city"
+    },
+    {
+      "id": 2,
+      "title": "LEGO Star Wars",
+      "tag": "lego star wars"
+    },
+    {
+      "id": 3,
+      "title": "LEGO Modular Buildings",
+      "tag": "lego modular"
+    }
+  ]
+}
