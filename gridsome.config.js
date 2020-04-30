@@ -5,6 +5,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Flickr Gallery',
-  plugins: []
+  siteName: 'Başar\'s LEGO Room ',
+  plugins: [],
+  templates: {
+    Photos: '/photos/:id',
+    Categories: '/categories/:id'
+  }
 }
