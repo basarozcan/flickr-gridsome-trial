@@ -1,14 +1,24 @@
-# Default starter for Gridsome
+# Flickr Gridsome Gallery
 
-This is the project you get when you run `gridsome create new-project`.
+This is an example project to learn basis of gridsome with using Flickr's public API.
 
-### 1. Install Gridsome CLI tool if you don't have
+## Install
 
-`npm install --global @gridsome/cli`
+Clone this repository from this repo to your computer. Then  `npm install` for installing dependencies.
 
-### 2. Create a Gridsome project
+## Settings
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+Please visit and register [flickr](https://flickr.com "flickr") and get a free API key to use its public photo search api.
+
+You can get your API key [here](https://www.flickr.com/services/apps/create/apply/ "here") We only use Key ( not the secret one)
+
+Rename `.env.example` to `.env` and enter your flickr api key and secret.
+
+## Usage
+
+Enter `gridsome develop` to start a local dev server at `http://localhost:8080`
+
+Happy coding 🎉
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
