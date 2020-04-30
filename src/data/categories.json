@@ -14,6 +14,31 @@
       "id": 3,
       "title": "LEGO Modular Buildings",
       "tag": "lego modular"
+    },
+    {
+      "id": 4,
+      "title": "LEGO Friends",
+      "tag": "lego friends"
+    },
+    {
+      "id": 5,
+      "title": "LEGO Architecture",
+      "tag": "lego architecture"
+    },
+    {
+      "id": 6,
+      "title": "LEGO Pirates",
+      "tag": "lego pirates"
+    },
+    {
+      "id": 7,
+      "title": "LEGO Castle",
+      "tag": "lego castle"
+    },
+    {
+      "id": 8,
+      "title": "LEGO Space",
+      "tag": "lego space"
     }
   ]
 }
