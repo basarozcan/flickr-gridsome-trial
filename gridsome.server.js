@@ -10,7 +10,7 @@ const axios = require('axios')
 module.exports = function (api) {
   api.loadSource(async actions => {
     
-    const api_key = "5601e3a16d1a6218c0f8702753c6bbda"
+    const api_key = process.env.FLICKR_PUBLIC_KEY
     const categories = require('./src/data/categories.json');
 
     const photosCollection = actions.addCollection({
