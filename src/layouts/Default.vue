@@ -12,11 +12,7 @@
             </svg>
           </button>
 
-          <button class="sm:flex sm:items-center">
-            <span
-              class="lg:inline ml-4 mr-2 text-sm font-medium text-white"
-            >{{$static.metadata.siteName}}</span>
-          </button>
+          <g-link class="lg:inline ml-4 mr-2 text-sm font-medium text-white" to="/">{{$static.metadata.siteName}}</g-link>
 
         </div>
       </header>
