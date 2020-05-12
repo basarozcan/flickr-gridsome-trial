@@ -1,28 +1,34 @@
 <template>
   <Layout>
-    <div class="showcase">
+    <!-- Title -->
+    <div class="relative shadow-md">
+      <div class="flex items-center justify-between px-5 py-4 bg-white">
+        <g-link :to="$page.photos.tag[0].path">
+          <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current text-gray-600">
+            <path
+              d="M9.707 3.293a1 1 0 010 1.414L5.414 9H13a9 9 0 019 9v2a1 1 0 11-2 0v-2a7 7 0 00-7-7H5.414l4.293 4.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
+            />
+          </svg>
+        </g-link>
+        <h3 class="text-base lg:text-lg xl:text-xl text-gray-900">{{$page.photos.title}}</h3>
+      </div>           
+    </div>
+    <!-- Title ends -->
+
+    <div class="p-3 flex-1 overflow-y-auto">
       <div class="image">
         <img class="img-fluid rounded" :src="$page.photos.url_org" />
       </div>
-      <div class="description">
-        <div class="return-button">
-          <g-link :to="$page.photos.tag[0].path">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16 0C7.17731 0 0 7.17731 0 16C0 24.8227 7.17731 32 16 32C24.8227 32 32 24.8227 32 16C32 7.17731 24.8227 0 16 0ZM19.6093 21.724C20.1306 22.2453 20.1306 23.088 19.6093 23.6093C19.3493 23.8693 19.008 24 18.6666 24C18.3253 24 17.9839 23.8693 17.7239 23.6093L11.0573 16.9427C10.536 16.4214 10.536 15.5787 11.0573 15.0574L17.724 8.39069C18.2453 7.86938 19.088 7.86938 19.6093 8.39069C20.1306 8.912 20.1306 9.75469 19.6093 10.276L13.8853 16L19.6093 21.724Z"
-                fill="black"
-              />
-            </svg>
-          </g-link>
+      <div class="flex flex-wrap -m-2">
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-8 h-8 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/32x32">
+          <div class="flex-grow">
+            <p class="text-gray-500 text-xs italic">photo by</p>
+            <h2 class="text-gray-900 title-font font-medium">{{$page.photos.owner}}</h2>
+          </div>
         </div>
-        <div class="title">{{$page.photos.title}}</div>
-        <div class="author">photo by {{$page.photos.owner}}</div>
+      </div>
       </div>
     </div>
   </Layout>
@@ -32,6 +38,7 @@
   query Photos($id: ID!) {
     photos(id: $id){
       id
+      url_sq
       url_org
       owner
       title

@@ -6,7 +6,9 @@
 
 module.exports = {
   siteName: 'Başar\'s LEGO Room ',
-  plugins: [],
+  plugins: [{
+    use: 'gridsome-plugin-tailwindcss',
+  }],
   templates: {
     Photos: '/photos/:id',
     Categories: '/categories/:id'
