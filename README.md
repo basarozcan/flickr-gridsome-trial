@@ -2,6 +2,8 @@
 
 This is an example project to learn basis of gridsome with using Flickr's public API.
 
+You can check [live project on netlify](https://flickr-gridsome-trial.netlify.app/)
+
 ## Install
 
 Clone this repository from this repo to your computer. Then  `npm install` for installing dependencies.
